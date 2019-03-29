@@ -5,7 +5,7 @@ LABEL maintainer="Craig Citro <craigcitro@google.com>"
 # Pick up some TF dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
         git \
-        python-setuptools \
+        python3-setuptools \
         cmake \
         build-essential \
         cuda-command-line-tools-9-0 \
