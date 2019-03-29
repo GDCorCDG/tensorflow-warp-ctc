@@ -40,17 +40,13 @@ RUN apt-get update && \
 RUN pip3 --no-cache-dir install \
         Pillow \
         h5py \
-        ipykernel \
-        jupyter \
         keras_applications \
         keras_preprocessing \
         matplotlib \
         numpy \
         pandas \
         scipy \
-        sklearn \
-        && \
-    python -m ipykernel.kernelspec
+        sklearn
 
 # --- DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
 # These lines will be edited automatically by parameterized_docker_build.sh. #
