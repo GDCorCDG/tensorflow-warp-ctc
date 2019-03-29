@@ -46,9 +46,8 @@ RUN pip3 --no-cache-dir install \
         numpy \
         pandas \
         scipy \
-        setuptools \
         sklearn
-
+RUN pip3 install --upgrade setuptools 
 # --- DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
 # These lines will be edited automatically by parameterized_docker_build.sh. #
 # COPY _PIP_FILE_ /
