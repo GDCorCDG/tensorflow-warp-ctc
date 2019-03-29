@@ -67,16 +67,4 @@ RUN ln -s  /usr/local/cuda-9.0/lib64/libcurand.so.9.0 \
 
 WORKDIR "/opt"
 
-ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
-
-# RUN ln -s -f /usr/bin/python3 /usr/bin/python#
-RUN git  clone https://github.com/HawkAaron/warp-ctc.git && \
-        cd warp-ctc && mkdir build && cd build && \
-        cmake .. && make && \
-        cd ../tensorflow_binding && \
-        python3 setup.py install && \
-        rm -rf /opt/warp-ctc
-# Set up our notebook config.
-
-
 CMD ["/bin/bash"]
