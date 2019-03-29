@@ -46,6 +46,7 @@ RUN pip3 --no-cache-dir install \
         numpy \
         pandas \
         scipy \
+        setuptools \
         sklearn
 
 # --- DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
@@ -58,8 +59,7 @@ RUN pip3 --no-cache-dir install \
 RUN pip3 --no-cache-dir install \
         'git+https://github.com/tensorpack/tensorpack.git' \
         'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI' \
-        tensorflow-gpu==1.12.0 \
-        -i https://pypi.douban.com/simple/
+        tensorflow-gpu==1.12.0 
 # --- ~ DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
 
 RUN ln -s  /usr/local/cuda-9.0/lib64/libcurand.so.9.0 \
