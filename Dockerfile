@@ -72,7 +72,7 @@ RUN git  clone https://github.com/HawkAaron/warp-ctc.git && \
         cd warp-ctc && mkdir build && cd build && \
         cmake .. && make && \
         cd ../tensorflow_binding && \
-        python setup.py install && \
+        python3 setup.py install && \
         rm -rf /opt/warp-ctc
 # Set up our notebook config.
 
