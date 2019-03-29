@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         git \
         python3-setuptools \
         cmake \
+        python3-dev \
         build-essential \
         cuda-command-line-tools-9-0 \
         cuda-cublas-9-0 \
