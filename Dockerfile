@@ -70,7 +70,7 @@ WORKDIR "/opt"
 # RUN ln -s -f /usr/bin/python3 /usr/bin/python#
 RUN git  clone https://github.com/HawkAaron/warp-ctc.git && \
         cd warp-ctc && mkdir build && cd build && \
-        cmake && make && \
+        cmake .. && make && \
         cd ../tensorflow_binding && \
         python setup.py install && \
         rm -rf /opt/warp-ctc
